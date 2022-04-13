@@ -1,5 +1,32 @@
 import streamlit as st
 from datetime import time, datetime
+import pandas as pd
+import numpy as np
+
+
+st.write("----------------------------------------------- Day 9 Challenge --------------------------------------------------")
+
+st.header('Line chart')
+
+chart_data = pd.DataFrame(
+     np.random.randn(200, 5),
+     columns=['a', 'b', 'c'])
+
+st.dataframe(chart_data)
+
+st.line_chart(chart_data)
+
+
+
+
+
+
+
+
+
+st.write("----------------------------------------------- Day 8 --------------------------------------------------")
+
+
 
 st.header('st.slider')
 
